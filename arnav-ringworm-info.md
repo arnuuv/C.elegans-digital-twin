@@ -99,3 +99,23 @@ Example -
 Input: Nose touch (1 or 0)
 Connectome-shaped neural network
 Output: Muscle activation -> Move away
+
+Data -
+
+1. ion channels - http://docs.google.com/spreadsheets/d/1SSgYO2cn29-C91boU4wqvK5jBOSWi7a1Hz1bzTeikzU/edit?gid=0#gid=0 (useless rn)
+2. neurons - https://www.wormatlas.org/neurons/Individual%20Neurons/Neuronframeset.html
+
+we should map neurons to stimulus. and they should output motor (last few neurons starting with V for movement in neuron sheet)Data Type Format
+Neuron list (names & types) - CSV or JSON
+Connectivity (from/to/weight/type) - Edge list (CSV or pandas DataFrame)
+Stimulus mapping (input neurons) - Dict or CSV
+Motor neuron list (output neurons) - List or CSV
+
+all data of neurons+mapping -> https://www.wormatlas.org/neuronalwiring.html
+
+stimulus mapping -> it has 302 neurons but only 60 sensory neurons.
+
+Input neurons 5-10 sensory neurons AVM, ALM, ASH, AWA, AFD
+Hidden neurons All interneurons AVA, AVD, AIA, RIM, etc.
+Output neurons 5-10 motor neurons VA, VB, DA, DB, DD, VD
+Edges (connectivity) From connectome file AVM → AVA (weight = 3, gap)
