@@ -1,11 +1,4 @@
-# C.elegans-digital-twin
-
-nervous system - https://www.wormatlas.org/hermaphrodite/nervous/mainframe.htm
-http://wormweb.org/neuralnet#c=ADA&m=1
-https://www.wormatlas.org/images/HaspelODonovan2011.pdf
-https://www.wormatlas.org/images/HaspelODonovan2012.pdf
-
-worm wiring - https://www.wormwiring.org/
+# C. elegans Neural Network
 
 This project implements a preliminary neural network framework specifically designed for analyzing C. elegans connectome data. The network can be used for various tasks including autoencoding, classification, and regression on neural connectivity patterns.
 
